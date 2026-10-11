@@ -2,11 +2,11 @@
 import 'package:flutter/material.dart';
 import '../models/product.dart';
 
-// Screen 3: Shows complete information about one product.
+// Display the selected product's details.
 class ProductDetailsPage extends StatelessWidget {
   final Product product;
 
-  // Receive the selected product from the previous screen.
+  // The product selected by the user.
   const ProductDetailsPage({
     super.key,
     required this.product,
@@ -22,7 +22,7 @@ class ProductDetailsPage extends StatelessWidget {
         ),
       ),
 
-      // Allow the product details to scroll on smaller screens.
+      // Make the details page scrollable.
       body: SingleChildScrollView(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -47,7 +47,7 @@ class ProductDetailsPage extends StatelessWidget {
               ),
             ),
 
-            // Product information.
+            // Display the product information.
             Padding(
               padding: const EdgeInsets.all(20),
               child: Column(
@@ -139,7 +139,7 @@ class ProductDetailsPage extends StatelessWidget {
                     height: 50,
                     child: ElevatedButton(
                       onPressed: () {
-                        // Show feedback when the button is tapped.
+                        // Confirm that the product was added.
                         ScaffoldMessenger.of(context).showSnackBar(
                           SnackBar(
                             content: Text(

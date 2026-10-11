@@ -12,12 +12,12 @@
 
 # Project Description
 
-Rosabee is a Flutter-based mini e-commerce application designed to provide users with a simple and 
-attractive shopping experience. The application displays products across different categories and 
-allows users to view detailed product information.
+Rosabee is a mini shopping application developed using Flutter and Dart. It allows users to browse 
+products in different categories, view product details, and interact with the Add to Cart button. 
+The app includes promotional banners, product ratings, prices, and product images.
 
-The interface features a clean design with a red accent color, promotional banners, product images, 
-ratings, and prices.
+The project focuses on Flutter layouts, reusable widgets, category filtering, screen navigation, and 
+basic button interactions.
 
 # Features
 

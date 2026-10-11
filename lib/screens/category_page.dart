@@ -5,11 +5,11 @@ import '../data/product_data.dart';
 import '../widgets/product_card.dart';
 import 'product_details_page.dart';
 
-// Screen 2: Displays products from the selected category.
+// Display products in the selected category.
 class CategoryPage extends StatelessWidget {
   final String categoryName;
 
-  // Receive the category name from the Home Page.
+  // The category selected by the user.
   const CategoryPage({
     super.key,
     required this.categoryName,
