@@ -1,6 +1,6 @@
-
 import 'package:flutter/material.dart';
-import 'screens/home_page.dart';
+
+import 'screens/login_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -15,11 +15,9 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Rosabee',
 
-      // Set the visual style for the whole application.
       theme: ThemeData(
         useMaterial3: true,
 
-        // Restrained red-and-white brand palette.
         colorScheme: ColorScheme.fromSeed(
           seedColor: const Color(0xFFD5001C),
           brightness: Brightness.light,
@@ -27,7 +25,6 @@ class MyApp extends StatelessWidget {
 
         scaffoldBackgroundColor: Colors.white,
 
-        // Simple, flat AppBar.
         appBarTheme: const AppBarTheme(
           backgroundColor: Colors.white,
           foregroundColor: Color(0xFF171717),
@@ -36,7 +33,6 @@ class MyApp extends StatelessWidget {
           centerTitle: false,
         ),
 
-        // Rectangular buttons instead of overly rounded buttons.
         elevatedButtonTheme: ElevatedButtonThemeData(
           style: ElevatedButton.styleFrom(
             backgroundColor: const Color(0xFFD5001C),
@@ -49,8 +45,8 @@ class MyApp extends StatelessWidget {
         ),
       ),
 
-      // Open the homepage first.
-      home: const HomePage(),
+      // Start with the Login page.
+      home: const LoginScreen(),
     );
   }
 }
